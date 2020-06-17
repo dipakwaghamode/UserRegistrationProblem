@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Enter user Last name:"LastName
+read -p "Enter Last Name:"Lastname
 
-if [[ $Lastame =~ ^[A-Z}{1}[a-z]{2,}$ ]]
+if [[ $LastName =~ ^[A-Z]{1}[a-z]{2,}$ ]]
 
 #if [[ $LastName =~ ^[[:upper:]]+([a-z]{3,})$ ]]
 
