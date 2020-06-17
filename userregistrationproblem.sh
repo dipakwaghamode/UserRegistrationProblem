@@ -1,16 +1,16 @@
 #!/bin/bash
 
-read -p " Enter the E-mail ID:" email_id
-checkid()
-{
-emailpattern="\b[A-Za-z0-9]+\@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
-if [[ $1 =~ $emailpattern ]]
+read -p " Enter the E-mail ID:"mobileno
+
+mobilepattern=^[0-9]+[ :space: ]+[0-9]*$
+
+
+if [[ mobileno =~ $mobilepattern ]]
 then
 
-	echo " Valid Mail id"
+	echo " Valid Mobile no"
 
 else
-        echo "Invalid Mail id"
+        echo "Invalid Mobile no"
 fi
-}
-checkid $email_id
+
