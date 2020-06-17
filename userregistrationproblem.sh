@@ -1,15 +1,16 @@
 #!/bin/bash
 
-read -p "Enter user Last name:"LastName
-
-if [[ $Lastame =~ ^[A-Z}{1}[a-z]{2,}$ ]]
-
-#if [[ $LastName =~ ^[[:upper:]]+([a-z]{3,})$ ]]
-
+read -p " Enter the E-mail ID:" email_id
+checkid()
+{
+emailpattern="\b[A-Za-z0-9]+\@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
+if [[ $1 =~ $emailpattern ]]
 then
 
-echo "Last name is valid $LastName"
+	echo " Valid Mail id"
 
 else
-        echo "Last name is not valid $LastName"
+        echo "Invalid Mail id"
 fi
+}
+checkid $email_id
