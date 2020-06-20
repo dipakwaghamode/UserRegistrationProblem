@@ -2,9 +2,9 @@
 
 read -p "Enter Last Name:"Lastname
 
-if [[ $LastName =~ ^[A-Z]{1}[a-z]{2,}$ ]]
+#if [[ $LastName =~ ^[A-Z]{1}[a-z]{2,}$ ]]
 
-#if [[ $LastName =~ ^[[:upper:]]+([a-z]{3,})$ ]]
+if [[ $LastName =~ ^[[:upper:]]+([a-z]{3,})$ ]]
 
 then
 
