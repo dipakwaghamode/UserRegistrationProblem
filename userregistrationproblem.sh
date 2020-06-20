@@ -1,19 +1,15 @@
 #!/bin/bash
-#shot -s extglob
-echo " User Registration Problem "
 
-read -p "Enter user name:" username
+read -p "Enter Last Name:"Lastname
 
-#if [[ $username =~ ^[A-Z}{1}[a-z]{2,}$ ]]
+#if [[ $LastName =~ ^[A-Z]{1}[a-z]{2,}$ ]]
 
-#//if [[ $username =~ ^[A-Z][a-z]{2,}$ ]]
-
-if [[ $username =~ ^[[:upper:]]+([a-z]{3,})$ ]]
+if [[ $LastName =~ ^[[:upper:]]+([a-z]{3,})$ ]]
 
 then
 
-echo "User name is valid $username "
+echo "Last name is valid $LastName"
 
 else
-        echo "User name is not valid $username"
+        echo "Last name is not valid $LastName"
 fi
