@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Password should be minimum 8 characters"pwd
+read -p "Rule 2-Should have at least 1 Upper case "pwd
 
-passwordpattern="^[0-9a-zA-Z#@!]{8}$"
+passwordpattern="^([0-9a-zA-Z#@!]*)[A-Z]+([a-z0-9@#!]*)$"
 
 
 if [[ pwd =~ $passwordpattern ]]
