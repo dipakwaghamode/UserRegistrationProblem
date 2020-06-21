@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Rule 2-Should have at least 1 Upper case "pwd
+read -p "Rule 3-Should have at least 1 number in pwd "pwd
 
-passwordpattern="^([0-9a-zA-Z#@!]*)[A-Z]+([a-z0-9@#!]*)$"
+passwordpattern="^([a-zA-Z#@!]*)[0-9]+([a-z@#!]*)$"
 
 
 if [[ pwd =~ $passwordpattern ]]
